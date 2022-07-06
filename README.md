@@ -15,8 +15,7 @@ if "-" is provided as a filename, data will be read from stdin (the console)
 
  When this output_feats.pdb file is loaded into PyMOL and colored by element, the following features will have the following colors:
 
-|Pharmacophoric   |Element |Color      |
-|Feature          |        |           |
+|Pharmacophoric Feature |Element |Color  |
 |-----------------|--------|-----------|
 |Donor            |   F    |light blue |
 |Acceptor         |   B    |pink       |
