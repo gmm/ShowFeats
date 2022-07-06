@@ -13,7 +13,7 @@ if "-" is provided as a filename, data will be read from stdin (the console)
 ## Example:
 ``python ShowFeatsToPDB.py --writeFeatsAsPDB --fdef=$RDBASE/Data/BaseFeatures.fdef input.sdf > output_feats.pdb``
 
- When this output_feats.pdb file is loaded into PyMOL and colored by element, the following features will have the following colors:
+ When this ``output_feats.pdb`` file is loaded into PyMOL and colored by element, the following features will have the following colors:
 
 |Pharmacophoric Feature |Element |Color  |
 |-----------------|--------|-----------|
