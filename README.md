@@ -1,27 +1,28 @@
 # ShowFeats
-Tools to visualize pharmacophoric features: this is a modification of Greg Landrum's original code that control's PyMOL. This version instead outputs a PDB formatted file and takes advantage of the default element colors in PyMOL to indicate different types of pharmacophoric features:
+Tools to visualize pharmacophoric features.
 
-Usage: 
-   ShowFeatsToPDB.py [optional args] <filenames>
+This is a modification of Greg Landrum's original code that control's PyMOL. This version instead takes an SDF or MOL file and outputs a PDB formatted file by taking advantage of the default element colors in PyMOL to indicate different types of pharmacophoric features. It works best using CPK spheres, and ``set sphere_scale=0.25``.
 
-  <filenames> can be one or more sd or mol formatted files.
+## Usage:
+``ShowFeatsToPDB.py [optional args] <filenames>``
 
-  if "-" is provided as a filename, data will be read from stdin (the console)
+``<filenames>`` can be one or more sd or mol formatted files.
 
-  Example:
-  python ShowFeatsToPDB.py --writeFeatsAsPDB --fdef=$RDBASE/Data/BaseFeatures.fdef input.sdf > output_feats.pdb
+if "-" is provided as a filename, data will be read from stdin (the console)
 
-  When this output_feats.pdb file is loaded into PyMOL and colored by element, 
-  the following features will have the following colors:
+## Example:
+``python ShowFeatsToPDB.py --writeFeatsAsPDB --fdef=$RDBASE/Data/BaseFeatures.fdef input.sdf > output_feats.pdb``
 
-  Pharmacophoric    El  Color
-  Feature           em
-  ________________  __  __________
-  Donor             F   light blue
-  Acceptor          B   pink
-  NegIonizable      O   red
-  PosIonizable      N   blue
-  ZnBinder          D   grey
-  Aromatic          P   orange
-  LumpedHydrophobe  Au  gold
-  Hydrophobe        S   yellow
+ When this output_feats.pdb file is loaded into PyMOL and colored by element, the following features will have the following colors:
+
+|Pharmacophoric   |Element |Color      |
+|Feature          |        |           |
+|-----------------|--------|-----------|
+|Donor            |   F    |light blue |
+|Acceptor         |   B    |pink       |
+|NegIonizable     |   O    |red        |
+|PosIonizable     |   N    |blue       |
+|ZnBinder         |   D    |grey       |
+|Aromatic         |   P    |orange     |
+|LumpedHydrophobe |   Au   |gold       |
+|Hydrophobe       |   S    |yellow     |
