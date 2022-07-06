@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # $Id: ShowFeatsToPDB.py 537 2007-08-20 14:54:35Z landrgr1 $
 #
 # Created by Greg Landrum Aug 2006
@@ -22,14 +23,14 @@ _usage = """
   Pharmacophoric    El  Color
   Feature           em
   ________________  __  __________
-  Donor	            F   light blue
-  Acceptor	        B   pink
-  NegIonizable	    O   red
-  PosIonizable	    N   blue
-  ZnBinder	        D   grey
-  Aromatic	        P   orange
+  Donor             F   light blue
+  Acceptor          B   pink
+  NegIonizable      O   red
+  PosIonizable      N   blue
+  ZnBinder          D   grey
+  Aromatic          P   orange
   LumpedHydrophobe  Au  gold
-  Hydrophobe	    S   yellow
+  Hydrophobe        S   yellow
 """
 
 _welcomeMessage = "This is ShowFeatsToPDB.py version %s" % (_version)
