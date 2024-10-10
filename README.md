@@ -36,3 +36,4 @@ If you give executable permission to ``ShowFeatsToPDB.py``, (using ``chmod +x Sh
 |Aromatic         |   P    |orange     |
 |LumpedHydrophobe |   Au   |gold       |
 |Hydrophobe       |   S    |yellow     |
+Read more about pharmacophores here: https://en.wikipedia.org/wiki/Pharmacophore
